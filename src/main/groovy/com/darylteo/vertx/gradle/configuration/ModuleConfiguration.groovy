@@ -40,6 +40,10 @@ class ModuleConfiguration {
     map.system = value
   }
 
+  public def loadFromModuleFirst(boolean value) {
+      map['load-from-module-first'] = value
+  }
+
   public def includes(String... includes) {
     if (!map.includes) {
       map.includes = []
